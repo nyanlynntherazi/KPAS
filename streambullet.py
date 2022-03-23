@@ -27,7 +27,7 @@ def execute(input_string):
 
 st.title('KPAS')
 
-input_string = st.text_area('paste here')
+input_string = st.text_area(label='',value='''paste the text here''')
 
 for line in execute(input_string):
     st.text(line)
