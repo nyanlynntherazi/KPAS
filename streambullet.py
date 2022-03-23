@@ -29,5 +29,10 @@ st.title('KPAS')
 
 input_string = st.text_area(label='',value='''paste the text here''')
 
-for line in execute(input_string):
-    st.text(line)
+
+
+if st.button('Bullet'):
+    for line in execute(input_string):
+        st.text(line)
+else:
+    st.write('')
